@@ -67,7 +67,7 @@ LAZY_MODE = bool(environ.get("LAZY_MODE"))
 #Add user id of the user in this field those who you want to be Authentic user for file renaming features
 lazy_renamers = [int(lazrenamers) if id_pattern.search(lazrenamers) else lazrenamers for lazrenamers in environ.get('LAZY_RENAMERS', '').split()]
 LAZY_RENAMERS = (lazy_renamers + ADMINS) if lazy_renamers else []
-REQ_CHANNEL = environ.get("REQ_CHANNEL", '-1001916038880')
+REQ_CHANNEL = environ.get("REQ_CHANNEL", '-1001894286532')
 
 #ai
 # OPENAI_API = environ.get("OPENAI_API","")
@@ -83,7 +83,7 @@ MOVIE_GROUP_USERNAME = environ.get('MOVIE_GROUP_USERNAME', "moviesdemandgroup123
 
 # Url Shortner
 URL_MODE = is_enabled((environ.get("URL_MODE","True")), False)
-URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'gplinks.in') #Always use website url from api section 
+URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'https://gplinks.in/') #Always use website url from api section 
 URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', 'ce0060045d7f51c958384cdedd3c022f48a93388')
 LZURL_PRIME_USERS = [int(lazyurlers) if id_pattern.search(lazyurlers) else lazyurlers for lazyurlers in environ.get('LZURL_PRIME_USERS', '5965340120').split()]
 lazy_groups = environ.get('LAZY_GROUPS','')
