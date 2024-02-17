@@ -21,7 +21,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '27495451'))
 API_HASH = environ.get('API_HASH', '778fdfe2aae56a38907c0cb683708fc5')
-BOT_TOKEN = environ['BOT_TOKEN']
+BOT_TOKEN = environ['BOT_TOKEN', '6535816705:AAHFMjBryV6bn4rcOqJZFdTxQW-JsEyEJ3Y']
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -44,7 +44,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "mayank9431060")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002064027831'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002082628988'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/moviessupport8')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
